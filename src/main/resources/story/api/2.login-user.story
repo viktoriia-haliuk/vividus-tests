@@ -1,4 +1,4 @@
-Scenario: Verify login as a User 
+Scenario: Verify login as a User
 When I execute an HTTP GET request for resource with URL "https://petstore.swagger.io/v2/user/login"
 And the request parameters contain "<username>"
 And the request parameters contain "<password>"
