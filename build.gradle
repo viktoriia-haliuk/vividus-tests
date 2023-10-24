@@ -5,7 +5,20 @@ ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDi
 
 apply from: "${buildSystemPath}/vividus-test-project.gradle"
 
+ext {
+    vividusVersion = '0.6.0'
+}
+
 dependencies {
-    implementation platform(group: 'org.vividus', name: 'vividus-bom', version: '0.6.0')
-    implementation(group: 'org.vividus', name: 'vividus')
+    implementation(group: 'org.vividus', name: 'vividus', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus-plugin-rest-api', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus-plugin-db', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus-plugin-datetime', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus-plugin-web-app', version: vividusVersion)
+    implementation(group: 'com.jayway.jsonpath', name: 'json-path') {
+        version {
+            strictly '2.4.0'
+        }
+    }
+     implementation('com.oracle.ojdbc:ojdbc8:19.3.0.0')
 }
