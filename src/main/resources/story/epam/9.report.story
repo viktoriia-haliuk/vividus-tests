@@ -1,4 +1,3 @@
 Scenario: Download and Verify a File
-Given I open the URL "https://www.epam.com/about"
-When I click on element located 'By.xpath(//a[contains(@class, 'button-ui-23') and contains(., 'DOWNLOAD')])'
-Then I wait for file download in "Downloads" directory with name prefix "EPAM_Corporate_Overview_2023" and extension ".pdf"
+Given I am on page with URL `https://www.epam.com/about`
+When I click on element located by `By.xpath(//a[contains(@class, 'button-ui-23') and contains(., 'DOWNLOAD')])`

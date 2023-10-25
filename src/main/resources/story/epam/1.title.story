@@ -1,4 +1,4 @@
 Scenario: Check the title is correct
-Given I am on the main application page
-When I click on element located 'By.xpath(//title)'
-Then title is equal to "EPAM | Software Engineering & Product Development Services"
+Given I am on main application page
+When I click on element located by `By.xpath(//button[@id='onetrust-accept-btn-handler'])`
+When I wait until the page has the title 'EPAM | Software Engineering & Product Development Services'

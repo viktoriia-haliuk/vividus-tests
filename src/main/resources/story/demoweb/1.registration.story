@@ -12,5 +12,5 @@ When I click on element located 'By.xpath(//input[@id='register-button'])'
 Then I wait until element the element located 'By.xpath(//div[@class='result'][contains(., 'Your registration completed')])' appears
 
 Examples:
-| email                                                 | FirstName                                     |LastName                                      | password    |
-| #{generate(regexify('[a-z]{6}@[a-z]{5}\\.[a-z]{3}'))} | #{generate(regexify('[A-Z]{1}[a-z]{4,5}'))}   | #{generate(regexify('[A-Z]{1}[a-z]{4,5}'))}  | #{generate(regexify '[a-z]{8}')} |
+| email                                                 | FirstName                                   |LastName                                      | password    |
+| test@mail.com | John   | Smith | password123! |
