@@ -8,7 +8,7 @@ When I click on element located by `By.xpath(//input[@id='RememberMe'])`
 When I click on element located by `By.xpath(//input[@value='Log in'])`
 When I wait until element located by `By.xpath(//div[@class='header-links']//a[@class='account'])` appears
 
-When I go to relative URL `https://demowebshop.tricentis.com/accessories`
+When I go to relative URL `accessories`
 
 When I click on element located by `By.xpath(//h2[@class='product-title']/a[text()='TCP Public MT/AT'])`
 Then the page with the URL 'https://demowebshop.tricentis.com/copy-of-tcp-self-paced-training' is loaded
