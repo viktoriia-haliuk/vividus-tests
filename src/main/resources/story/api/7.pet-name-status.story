@@ -1,7 +1,7 @@
 Scenario: Verify updating Pet's name and status
 Given request body:
 {
-  "id": 12345,
+  "id": ${petId},
   "category": {
     "id": 1,
     "name": "Dogs"

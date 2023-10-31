@@ -1,7 +1,7 @@
 Scenario: Verify adding a new Pet
 Given request body:
 {
-   "id": 12345,
+   "id": <petId>,
    "category": {
        "id": 1,
        "name": "Dogs"
@@ -22,3 +22,7 @@ When I set request headers:
 When I execute HTTP POST request for resource with URL `https://petstore.swagger.io/v2/pet`
 
 Then response code is equal to `200`
+
+Examples:
+|petId                                         |
+|#{generate(Number.numberBetween '1','100')}|

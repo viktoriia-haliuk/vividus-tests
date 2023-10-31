@@ -1,13 +1,13 @@
 Scenario: Verify updating Pet's image
 Given request body:
 {
-  "id": 12345,
+  "id": ${petId},
   "category": {
     "id": 1,
     "name": "Dogs"
   },
   "name": "Sherlock",
-  "photoUrls": ["new_sherlock’s_photo.jpg"],
+  "photoUrls": ["updated_sherlock’s_photo.jpg"],
   "tags": [
     {
       "id": 1,
