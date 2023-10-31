@@ -5,9 +5,4 @@ Given multipart request:
 
 When I execute HTTP POST request for resource with URL `https://petstore.swagger.io/v2/pet/${petId}/uploadImage`
 
-When I set request headers:
-|name                        |value                          |
-|Content-Type                |application/json               |
-
-
 Then response code is equal to `200`
